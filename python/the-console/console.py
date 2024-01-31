@@ -3,7 +3,9 @@ import cmd
 from models.Pokemon import Pokemon
 from repository.PokeApiRepository import PokeApiRepository
 
-"A simple Pokedex command line interface"
+"""
+A simple Pokedex command line interface
+"""
 
 
 class Pokedex(cmd.Cmd):
@@ -14,7 +16,7 @@ class Pokedex(cmd.Cmd):
     intro = "Type help or ? to list commands."
     prompt = "(pokedex) "
 
-    def do_pokemon(self, name):
+    def do_search(self, name):
         """
         Retrieves a Pokemon by using the provided name.
 
@@ -26,10 +28,10 @@ class Pokedex(cmd.Cmd):
         """
         repo = PokeApiRepository()
 
-        print("Retrieving Pokemon...")
-
         pokemon = repo.get_pokemon(name)
 
+        print("Retrieving Pokemon...")
+        
         # print the name
         print(pokemon.name)
 
