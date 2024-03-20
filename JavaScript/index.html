@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <h1>JS Practice</h1>
+    <button id="hello-btn" type="button">Say Hello!</button>
+    <button id="goodbye-btn" type="button">Say Goodbye!</button>
+    <h2 class="greeting"></h2>
+    <script>
+      let greetingHeader = document.querySelector(".greeting");
+
+      document.getElementById("hello-btn").addEventListener("click", () => {
+        greetingHeader.innerHTML = "Hello, World!";
+      });
+
+      document.getElementById("goodbye-btn").addEventListener("click", () => {
+        greetingHeader.innerHTML = "Goodbye, World!";
+      });
+    </script>
+  </body>
+</html>
