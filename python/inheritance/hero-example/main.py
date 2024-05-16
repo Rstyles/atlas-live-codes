@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-from hero import Hero
+
 from archer import Archer
+from hero import Hero
 from knight import Knight
 from wizzard import Wizzard
 
-mike = Hero("Mike", "Spear")
-# print(mike)
-# mike.attack()
 
-joe = Archer("Joe")
+joe = Hero("Joe", "Spear")
 # print(joe)
 # joe.attack()
+
+mike = Archer("Mike")
+# print(mike)
+# mike.attack()
 
 jake = Knight("Jake")
 # print(jake)
@@ -19,9 +21,9 @@ jake = Knight("Jake")
 
 tina = Wizzard("Tina")
 # print(tina)
-# tina.cast_spell("Defensive Ward")
+# tina.cast_spell("Magic Missile")
 # tina.attack()
 
-heroes = [mike, joe, jake, tina]
+heroes = [joe, mike, jake, tina]
 for hero in heroes:
     hero.attack()

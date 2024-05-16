@@ -5,6 +5,7 @@ from add_numbers import add_numbers
 # Command to run tests
 # python3 -m unittest test_add_numbers.py
 
+
 class TestAddNumbers(unittest.TestCase):
     def test_with_valid_ints(self):
         self.assertEqual(add_numbers(2, 5), 7)
