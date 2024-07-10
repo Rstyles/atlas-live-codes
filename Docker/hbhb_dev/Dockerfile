@@ -23,11 +23,11 @@ EXPOSE 5000
 EXPOSE 5001
 
 # AirBnB Clone Environment Variables
-# ENV HBNB_MYSQL_USER=hbnb_dev
-# ENV HBNB_MYSQL_PWD=hbnb_dev_pwd
-# ENV HBNB_MYSQL_HOST=localhost
-# ENV HBNB_MYSQL_DB=hbnb_dev_db
-# ENV HBNB_TYPE_STORAGE=db
+ENV HBNB_MYSQL_USER=hbnb_dev
+ENV HBNB_MYSQL_PWD=hbnb_dev_pwd
+ENV HBNB_MYSQL_HOST=localhost
+ENV HBNB_MYSQL_DB=hbnb_dev_db
+ENV HBNB_TYPE_STORAGE=db
 
 
 # start the MySQL service
